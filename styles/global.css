@@ -45,13 +45,14 @@
 }
 
 html {  
+  height: 100%;
   scroll-behavior: smooth;
 }
 
 body {
   font: var(--text-sm);
   color: var(--gray-500);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 a {

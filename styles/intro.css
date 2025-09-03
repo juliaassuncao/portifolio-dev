@@ -1,15 +1,11 @@
-.intro {
+#intro {
   height: 100vh;
   background-image: url(../assets/imgs/Background_Intro.png);
   background-size: cover;
   background-repeat: no-repeat;
 
   flex-direction: column;
-  padding-top: 7.5rem;
-}
-
-.hero {
-  outline: 1px solid blue;
+  padding-top: 8rem;
 }
 
 .avatar {
@@ -43,6 +39,10 @@
     }
   }
 
+  & h1 {
+    text-align: center;
+  }
+
   p:last-child {
     color: var(--gray-400);
     max-width: 42.5rem;
@@ -56,6 +56,7 @@
 
   & ul {
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
 
     & li {
@@ -67,5 +68,8 @@
       padding: 0.5rem 1rem;
     }
   }
+}
 
+.scroll-button {
+  margin-top: 5.875rem;
 }
