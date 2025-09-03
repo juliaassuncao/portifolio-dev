@@ -16,10 +16,10 @@
   <body>
     <main id="app">
       <!-- INTRO -->
-      <section class="intro flex align-items">
+      <section class="intro flex">
         <!-- HERO -->
-        <header class="hero container flex">
-          <div class="avatar flex">
+        <header class="hero container">
+          <div class="avatar container">
             <img
               src="./assets/imgs/Avatar.png"
               alt="Mulher branca com cabelo castanho e lenço na cabeça"
@@ -27,12 +27,9 @@
             <img src="./assets/icons/CodeTag.svg" alt="Ícone de tag html" />
           </div>
 
-          <div class="title">
+          <div class="title flex column-center">
             <p>Hello World! Meu nome é <strong>Martina Santos</strong> e sou</p>
             <h1>Desenvolvedora Fullstack</h1>
-          </div>
-
-          <div class="description">
             <p>
               Transformo necessidades em aplicações reais, evolventes e
               funcionais. Desenvolvo sistemas através da minha paixão pela
@@ -42,7 +39,7 @@
           </div>
 
           <div class="tags">
-            <ul>
+            <ul class="flex">
               <li>
                 <img src="./assets/icons/GitHub.svg" alt="GitHub" />
                 <span>GitHub</span>
@@ -72,7 +69,11 @@
         </header>
 
         <!-- SCROLL BUTTON -->
-        <a href="projects" class="container scroll-button" aria-label="Ir para a seção de projetos">
+        <a
+          href="projects"
+          class="container scroll-button"
+          aria-label="Ir para a seção de projetos"
+        >
           <img src="./assets/icons/CaretDoubleDown.svg" />
         </a>
       </section>

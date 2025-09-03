@@ -9,19 +9,14 @@
 }
 
 .hero {
-  /* outline: 1px solid blue; */
-
-  flex-direction: column;
-  align-items: center;
+  outline: 1px solid blue;
 }
 
 .avatar {
-  padding-inline: auto;
-
   position: relative;
-  display: inline-block;
+  width: 6rem;
+  display: block;
   margin-bottom: 3.5rem;
-  width: 5.5rem;
 
   & img:first-of-type {
     display: block;
@@ -35,4 +30,42 @@
     bottom: -7px;
     right: -10px;
   }
+}
+
+.title {
+  p:first-child {
+    font: var(--subtitle);
+    color: var(--gray-500);
+    margin-bottom: 0.5rem;
+
+    strong {
+      color: var(--red);
+    }
+  }
+
+  p:last-child {
+    color: var(--gray-400);
+    max-width: 42.5rem;
+    text-align: center;
+    margin-top: 1.25rem;
+  }
+}
+
+.tags {
+  margin-top: 5rem;
+
+  & ul {
+    justify-content: center;
+    gap: 1rem;
+
+    & li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: var(--gray-300);
+      border-radius: 1.25rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+
 }

@@ -11,6 +11,7 @@
   display: grid;
 }
 
-.align-center {
+.column-center {
+  flex-direction: column;
   align-items: center;
 }

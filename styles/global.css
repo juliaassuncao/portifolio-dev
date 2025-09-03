@@ -60,6 +60,11 @@ a {
   cursor: pointer;
 }
 
+h1 {
+  color: inherit;
+  font: var(--title-lg);
+}
+
 img {
   max-width: 100%;
   height: auto;
