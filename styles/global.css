@@ -34,31 +34,23 @@
   --ff-subtitle: "Inconsolata", system-ui, sans-serif;
   --ff-text: "Maven Pro", system-ui, sans-serif;
 
-  --title-lg: 700 5.6rem/120% var(--ff-title);
-  --title-md: 700 2.4rem/120% var(--ff-title);
-  --title-sm: 700 1.6rem/120% var(--ff-title);
+  --title-lg: 700 3.5rem/120% var(--ff-title);
+  --title-md: 700 1.5rem/120% var(--ff-title);
+  --title-sm: 700 1rem/120% var(--ff-title);
 
-  --subtitle: 400 2rem/120% var(--ff-subtitle);
+  --subtitle: 400 1.25rem/120% var(--ff-subtitle);
 
-  --text-md: 400 1.6rem/140% var(--ff-text);
-  --text-sm: 400 1.4rem/140% var(--ff-text);
+  --text-md: 400 1rem/140% var(--ff-text);
+  --text-sm: 400 0.875rem/140% var(--ff-text);
 }
 
-html {
-  font-size: calc(100vw / 1366 * 10);
-  
-  font-family: var(--ff-text);
-  font: var(--text-sm);
-  color: var(--gray-500);
-
+html {  
   scroll-behavior: smooth;
-
-  @media (max-width: 600px) {
-    font-size: calc(100vw / 414 * 10);
-  }
 }
 
 body {
+  font: var(--text-sm);
+  color: var(--gray-500);
   overflow: hidden;
 }
 
@@ -70,4 +62,9 @@ a {
 
 img {
   max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
 }

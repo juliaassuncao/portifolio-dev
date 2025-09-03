@@ -1,0 +1,38 @@
+.intro {
+  height: 100vh;
+  background-image: url(../assets/imgs/Background_Intro.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  flex-direction: column;
+  padding-top: 7.5rem;
+}
+
+.hero {
+  /* outline: 1px solid blue; */
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  padding-inline: auto;
+
+  position: relative;
+  display: inline-block;
+  margin-bottom: 3.5rem;
+  width: 5.5rem;
+
+  & img:first-of-type {
+    display: block;
+    outline: 0.125rem solid var(--red);
+    border-radius: 50%;
+    padding: 0.2725rem;
+  }
+
+  & img:last-of-type {
+    position: absolute;
+    bottom: -7px;
+    right: -10px;
+  }
+}

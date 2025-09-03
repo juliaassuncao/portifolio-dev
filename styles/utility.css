@@ -1,0 +1,16 @@
+.container {
+  max-width: 65rem;
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.align-center {
+  align-items: center;
+}
