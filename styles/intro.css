@@ -1,14 +1,15 @@
 #intro {
-  height: 100vh;
-  background-image: url(../assets/imgs/Background_Intro.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url(../assets/imgs/Background_Intro.png) no-repeat
+    center/cover;
+  min-height: 100vh;
 
   flex-direction: column;
+  text-align: center;
   padding-top: 8rem;
 
-  @media (max-width: 1366px) {
+  @media (max-width: 65rem) {
+    background: none;
+    background-color: var(--gray-200);
   }
 }
 
@@ -33,7 +34,7 @@
   }
 
   &:hover {
-    transform: scale(1.10);
+    transform: scale(1.1);
   }
 }
 
@@ -48,14 +49,9 @@
     }
   }
 
-  & h1 {
-    text-align: center;
-  }
-
   p:last-child {
     color: var(--gray-400);
     max-width: 42.5rem;
-    text-align: center;
     margin-top: 1.25rem;
   }
 }
@@ -80,5 +76,6 @@
 }
 
 .scroll-button {
+  display: block;
   margin-top: 5.875rem;
 }
