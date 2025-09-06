@@ -11,7 +11,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
   gap: 1rem;
 }
 
@@ -33,15 +33,5 @@
   & h2 {
     font: var(--title-md);
     color: var(--gray-600);
-  }
-}
-
-@media (max-width: 58.5rem) {
-  .container {
-    padding-inline: 4rem;
-  }
-
-  .grid {
-    gap: 2rem;
   }
 }
