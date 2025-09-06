@@ -1,3 +1,44 @@
 #services {
-  display: none;
+  background-color: var(--gray-100);
+  padding-block: 5.5rem 7.5rem;
+}
+
+.cards {
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.card-flex {
+  outline: 0.125rem solid var(--gray-200);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  max-width: 17.5rem;
+  flex-grow: 1;
+
+  & img {
+    margin-bottom: 1.25rem;
+  }
+
+  & h3 {
+    font: var(--title-sm);
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-flex {
+    min-width: 30rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-flex {
+    min-width: 18rem;
+  }
 }
