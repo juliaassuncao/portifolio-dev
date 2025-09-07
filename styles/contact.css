@@ -1,3 +1,54 @@
 #contact {
-  display: none;
+  background: url(../assets/imgs/Background_Contacts.png) no-repeat center/cover;
+  min-height: 100vh;
+  padding-block: 8rem 12.5rem;
+
+  @media (max-width: 1040px) {
+    background: none;
+    background-color: var(--gray-200);
+  }
+}
+
+.section-header:last-child {
+  p {
+    color: var(--purple);
+  }
+
+  small {
+    display: block;
+    font: var(--text-md);
+    margin-block: 0.5rem 3rem;
+  }
+}
+
+.links {
+  align-items: center;
+  gap: 1rem;
+}
+
+.link {
+  max-width: 25rem;
+  width: 100%;
+  background-color: var(--gray-300);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  flex-grow: 1;
+
+  & span {
+    font: var(--text-md);
+    flex-grow: 1;
+  }
+
+  &:hover {
+    outline: 0.125rem solid var(--blue);
+
+    & svg {
+      & path {
+        fill: var(--blue);
+      }
+    }
+  }
 }
